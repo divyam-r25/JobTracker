@@ -1,0 +1,130 @@
+.job-card {
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(100, 116, 139, 0.22);
+  border-radius: 1rem;
+  padding: 0.95rem;
+  display: grid;
+  gap: 0.85rem;
+  box-shadow: 0 14px 38px rgba(15, 23, 42, 0.06);
+}
+
+.job-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.job-card__company-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.job-card__logo,
+.job-card__logo-fallback {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(100, 116, 139, 0.2);
+  background: #ffffff;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.job-card__logo {
+  object-fit: contain;
+  padding: 0.3rem;
+}
+
+.job-card__logo-fallback {
+  background: linear-gradient(135deg, #cffafe, #fef3c7);
+  font-weight: 800;
+  color: #134e4a;
+}
+
+.job-card h3 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1rem;
+}
+
+.job-card p {
+  margin: 0.18rem 0 0;
+  color: #475569;
+  font-size: 0.84rem;
+}
+
+.job-card__meta {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.job-card__meta div {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.job-card__meta dt {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.72rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.job-card__meta dd {
+  margin: 0;
+  color: #0f172a;
+  font-size: 0.85rem;
+  font-weight: 650;
+}
+
+.job-card__footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.icon-button {
+  border: 1px solid rgba(15, 23, 42, 0.16);
+  background: #ffffff;
+  border-radius: 0.6rem;
+  padding: 0.4rem 0.56rem;
+  color: #0f172a;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.icon-button--link {
+  color: #1d4ed8;
+}
+
+.icon-button--active {
+  background: rgba(251, 191, 36, 0.18);
+  border-color: rgba(245, 158, 11, 0.65);
+  color: #92400e;
+}
+
+.icon-button--danger {
+  color: #b91c1c;
+}
+
+@media (max-width: 520px) {
+  .job-card__meta {
+    grid-template-columns: 1fr;
+  }
+}

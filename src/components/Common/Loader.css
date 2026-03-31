@@ -1,0 +1,25 @@
+.loader {
+  min-height: 220px;
+  display: grid;
+  place-content: center;
+  gap: 0.75rem;
+  text-align: center;
+  color: #155e75;
+  font-weight: 600;
+}
+
+.loader__spinner {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 999px;
+  border: 3px solid #bae6fd;
+  border-top-color: #0284c7;
+  animation: spin 0.8s linear infinite;
+  justify-self: center;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

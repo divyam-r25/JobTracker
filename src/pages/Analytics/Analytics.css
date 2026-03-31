@@ -1,0 +1,29 @@
+.platform-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.platform-list li {
+  border: 1px solid rgba(100, 116, 139, 0.22);
+  border-radius: 0.76rem;
+  padding: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.platform-list p {
+  margin: 0;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.platform-list strong {
+  color: #0369a1;
+  font-size: 0.95rem;
+}

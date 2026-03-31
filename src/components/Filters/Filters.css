@@ -1,0 +1,72 @@
+.filters {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.7rem;
+  padding: 0.9rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(100, 116, 139, 0.2);
+}
+
+.filters label {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.filters label span {
+  color: #334155;
+  font-size: 0.73rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.filters select {
+  width: 100%;
+  border: 1px solid rgba(100, 116, 139, 0.35);
+  border-radius: 0.72rem;
+  padding: 0.5rem 0.65rem;
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 0.84rem;
+}
+
+.filters__bookmark {
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: #ffffff;
+  border-radius: 0.72rem;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.7rem;
+  cursor: pointer;
+}
+
+.filters__bookmark--active {
+  background: rgba(251, 191, 36, 0.18);
+  border-color: rgba(245, 158, 11, 0.55);
+  color: #92400e;
+}
+
+@media (max-width: 1200px) {
+  .filters {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .filters {
+    grid-template-columns: 1fr;
+  }
+}
